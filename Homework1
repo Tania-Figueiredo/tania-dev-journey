@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homeworkbasics1</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        color: #1b64d6;
+        font-size: 34px;
+      }
+      h2 {
+        font-weight: normal;
+        text-align: center;
+        font-size: 34px;
+      }
+
+      ul {
+        display: block;
+        padding: 0px;
+      }
+      li {
+        list-style: none;
+        text-align: center;
+        padding: 10px 0px;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+        max-width: 400px;
+        margin: auto;
+      }
+      li:hover {
+        background: rgb(254, 251, 239);
+      }
+
+      h3,
+      h4,
+      h5 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 18px;
+        font-weight: normal;
+        text-align: center;
+        margin: 20px;
+      }
+      button {
+        border: 1px solid #1a64d6;
+        border-radius: 30px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        background: #1a64d6;
+        color: #ffffff;
+        display: block;
+        font-size: 16px;
+        margin: 20px auto;
+        padding: 16px 24px;
+        text-align: center;
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+        line-height: 22px;
+      }
+      button:hover {
+        background: #ffffff;
+        color: #1a64d6;
+        border: 1px solid #1a64d6;
+      }
+      footer {
+        font-size: 18px;
+        font-weight: normal;
+        text-align: center;
+      }
+
+      .max {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      🌤️
+      <br />
+      Currently 15° in Mira de Aire
+    </h1>
+    <h2>
+      9°/
+      <span class="max">16°</span>
+    </h2>
+    <ul>
+      <li>
+        <h3>☀️ Tomorrow</h3>
+        <p>9°/ <span class="max">17°</span></p>
+      </li>
+      <li>
+        <h4>☀️ Wednesday</h4>
+        <p>10°/ <span class="max">22°</span></p>
+      </li>
+      <li>
+        <h5>☀️ Thursday</h5>
+        <p>12°/ <span class="max">24°</span></p>
+      </li>
+    </ul>
+    <button>Change city</button>
+    <footer>Coded by Tânia Figueiredo</footer>
+  </body>
+</html>

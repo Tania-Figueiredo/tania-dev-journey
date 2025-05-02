@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheCodes Basics Final Project – Healthy Habits</title>
+    <style>
+      body {
+        background: linear-gradient(to bottom, #fdf6e3, #f0f4c3);
+        color: #333333;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        min-height: 100vh;
+        padding: 0;
+      }
+
+      .container {
+        margin: 0 auto;
+        max-width: 700px;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 34px;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 28px;
+        text-align: center;
+      }
+
+      img {
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+        display: block;
+        margin: 30px auto 0 auto;
+        width: 300px;
+      }
+
+      ul {
+        font-size: 18px;
+        line-height: 1.5;
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 20px;
+      }
+
+      .habit-title {
+        font-weight: bold;
+      }
+
+      a {
+        color: #388e3c;
+        display: block;
+        font-size: 15px;
+        margin: 20px auto;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #388e3c;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      button {
+        background-color: #c5e1a5;
+        border: 1px solid #c5e1a5;
+        border-radius: 30px;
+        color: white;
+        cursor: pointer;
+        display: block;
+        font-size: 16px;
+        margin: 30px auto;
+        padding: 20px 20px;
+        transition: all 200ms ease-in-out;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      button:hover {
+        background-color: white;
+        color: #7cb342;
+      }
+
+      p {
+        font-size: 16px;
+        margin-top: 30px;
+        opacity: 0.8;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Healthy Habits for a Productive Life</h1>
+      <h2>🌿 Simple daily actions that make a big difference</h2>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/164/582/original/images.jpeg?1746183024"
+        alt="Zen stones and bamboo"
+      />
+
+      <ul>
+        <li>
+          <span class="habit-title">Wake Up Early</span>
+          <p>
+            Starting your day early gives you a calm and focused mindset. It
+            allows extra time to plan, eat breakfast peacefully, and avoid the
+            stress of rushing. <strong>A consistent morning routine</strong> can
+            improve your energy, motivation, and overall wellbeing.
+          </p>
+        </li>
+        <li>
+          <span class="habit-title">Move Your Body</span>
+          <p>
+            Daily movement helps boost both physical and mental health. Whether
+            it’s a walk, a few stretches, or light exercise, moving your body
+            improves focus and reduces stress.
+            <strong>Just 15 minutes a day</strong> can make a real difference.
+          </p>
+        </li>
+        <li>
+          <span class="habit-title">Digital Breaks</span>
+          <p>
+            Taking regular breaks from screens supports concentration and
+            reduces fatigue. Step away every couple of hours to breathe,
+            stretch, or drink water. <em>Even small pauses</em> help your brain
+            reset and keep you productive throughout the day.
+          </p>
+        </li>
+      </ul>
+
+      <a
+        href="https://www.mind.org.uk/information-support/tips-for-everyday-living/wellbeing/"
+        target="_blank"
+        title="Wellbeing tips"
+      >
+        Learn more about daily wellbeing tips here.
+      </a>
+
+      <button>Start your habit check</button>
+
+      <p>Coded by Tânia Figueiredo</p>
+    </div>
+
+    <script>
+      function habitCheck() {
+        let name = prompt(
+          "Welcome to your daily wellness check 🌞 What’s your name?"
+        );
+        let sleepTime = prompt(
+          name + ", do you usually sleep 7 or more hours per night?"
+        );
+
+        let message;
+
+        if (sleepTime >= 7) {
+          message = "great! Keep it up 🌙";
+        } else {
+          message = "try adjusting your bedtime 😴";
+        }
+
+        alert(name + ", " + message);
+      }
+
+      let startButton = document.querySelector("button");
+      startButton.addEventListener("click", habitCheck);
+    </script>
+  </body>
+</html>

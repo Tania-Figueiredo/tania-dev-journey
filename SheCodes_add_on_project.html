@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Hobby</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: linear-gradient(to bottom, #fdfaf6, #f3ede7);
+        font-family: "Source Sans 3", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Playfair Display", serif;
+      }
+
+      h1 {
+        font-size: 35px;
+        margin: 30px auto;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 25px;
+        margin: 20px 20px 40px auto;
+        text-align: center;
+      }
+
+      button {
+        cursor: pointer;
+        display: block;
+        font-size: 16px;
+        margin: 20px auto;
+        padding: 5px 10px;
+      }
+
+      p {
+        font-size: 16px;
+        text-align: center;
+      }
+
+      footer {
+        text-align: center;
+        margin: 20px auto;
+      }
+
+      .container {
+        margin: 0 auto;
+        max-width: 900px;
+        padding: 20px;
+      }
+
+      .section-grid {
+        align-items: center;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: auto 1fr;
+        margin-bottom: 40px;
+      }
+
+      .section-grid .image img {
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+        display: block;
+        height: 300px;
+        margin: 0 auto;
+        max-height: 400px;
+        object-fit: contain;
+        transition: transform 0.3s ease-in-out;
+        width: 100%;
+      }
+      .section-grid .image img:hover {
+        transform: scale(2.05);
+      }
+
+      .section-grid .text {
+        line-height: 1.6;
+        padding: 10px;
+        text-align: center;
+      }
+      .dark {
+        background: linear-gradient(to bottom, #1f1f1f, #121212);
+        color: #f5f5f5;
+      }
+
+      .dark h1,
+      .dark h2,
+      .dark h3,
+      .dark p {
+        color: #f5f5f5;
+      }
+
+      .dark button {
+        background-color: #444;
+        color: #fff;
+        border: 1px solid #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>A Journey through Books</h1>
+      <h2><em>Books I've loved and ones I'm about to explore</em></h2>
+
+      <div class="section-grid">
+        <div class="image">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/164/905/original/Captura_de_ecra%CC%83_2025-05-05__a%CC%80s_16.18.04.png?1746458642"
+            alt="goodnight"
+          />
+        </div>
+        <div class="text">
+          <h3>Goodnight Beautiful - Dorothy Koomson</h3>
+          <p>
+            A moving and suspenseful story about childhood friendship, betrayal,
+            and the devastating consequences of keeping secrets.
+          </p>
+        </div>
+      </div>
+
+      <div class="section-grid">
+        <div class="image">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/164/904/original/Captura_de_ecra%CC%83_2025-05-05__a%CC%80s_16.18.26.png?1746458636"
+            alt="number9"
+          />
+        </div>
+        <div class="text">
+          <h3>The Couple at Number 9 - Claire Douglas</h3>
+          <p>
+            A gripping psychological thriller where a young couple uncover
+            chilling secrets buried in the garden of their new home.
+          </p>
+        </div>
+      </div>
+
+      <div class="section-grid">
+        <div class="image">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/164/903/original/Captura_de_ecra%CC%83_2025-05-05__a%CC%80s_16.19.03.png?1746458628"
+            alt="iknow"
+          />
+        </div>
+        <div class="text">
+          <h3>I Know What You've Done - Dorothy Koomson</h3>
+          <p>
+            A twist-filled domestic noir that explores the secrets behind a
+            seemingly perfect neighbourhood.
+          </p>
+        </div>
+      </div>
+
+      <div class="section-grid">
+        <div class="image">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/164/902/original/Captura_de_ecra%CC%83_2025-05-05__a%CC%80s_16.19.33.png?1746458623"
+            alt="coveratomic"
+          />
+        </div>
+        <div class="text">
+          <h3>Atomic Habits - James Clear</h3>
+          <p>
+            A powerful non-fiction guide on how small changes in daily routines
+            can lead to remarkable life transformation.
+          </p>
+        </div>
+      </div>
+
+      <button class="theme-button">Dark Mode</button>
+    </div>
+    <p>
+      "Reading gives us someplace to go when we have to stay where we are.” –
+      Mason Cooley
+    </p>
+    <footer><p>Designed & coded by Tânia Figueiredo</p></footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
